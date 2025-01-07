@@ -1,5 +1,6 @@
 package SmartHomeManagementSystem;
 
+import java.sql.SQLOutput;
 import java.util.List;
 
 public class SmartHome implements Management {
@@ -10,15 +11,18 @@ public class SmartHome implements Management {
 
     public void addUser(User user) {
         users.add(user);
+        System.out.println(user.getFirstName() + " added to SmartHome");
     }
 
     public void removeUser(User user) {
         users.remove(user);
+        System.out.println(user.getFirstName() + " removed from SmartHome");
     }
 
     public Device getDeviceStatus(int id) {
         for (Device device : devices) {
             if (device.getId() == id) {
+                System.out.println(device.getName() + " has been added to SmartHome"+(device.getStatus() ?"on":"of"));
                 return device;
             }
         }
@@ -28,15 +32,18 @@ public class SmartHome implements Management {
 
     @Override
     public void addDevice(Device device) {
-
+        devices.add(device);
+        System.out.println(device.getName() + " added to SmartHome");
     }
 
     @Override
     public void removeDevice(Device device) {
-
+        devices.remove(device);
+        System.out.println(device.getName() + " removed from SmartHome");
     }
 
     public List<User> getUsers() {
+
         return users;
     }
 
