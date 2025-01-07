@@ -28,9 +28,16 @@ bin/
 ### Mac OS ###
 .DS_Store
 
+# Ignore desktop.ini
 desktop.ini
 
+# Ignore pom.xml
 pom.xml
 
-### IDEA ###
-.idea/
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
