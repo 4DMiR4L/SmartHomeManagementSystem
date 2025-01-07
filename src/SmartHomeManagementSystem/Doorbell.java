@@ -7,13 +7,16 @@ public class Doorbell extends Device{
 
     @Override
     public void turnOn() {
-
+        System.out.println(getId()+"Doorbell turned on");
     }
 
     @Override
     public void turnOff() {
+        System.out.println(getId()+"Doorbell turned off");
 
     }
-    public void ring(){}
+    public void ring(){
+        System.out.println("Doorbell ring on");
+    }
 
 }

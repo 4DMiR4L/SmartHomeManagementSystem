@@ -8,15 +8,15 @@ public class Tesmostat extends Device {
 
     @Override
     public void turnOn() {
-
+        System.out.println(getId() + " turned on");
     }
 
     @Override
     public void turnOff() {
-
+        System.out.println(getId() + " turned off");
     }
 
     public void setTemperature(int temperature) {
-
+        System.out.println(" sets temperature " + temperature);
     }
 }

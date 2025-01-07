@@ -8,11 +8,11 @@ public class Light extends Device {
 
     @Override
     public void turnOn() {
-
+        System.out.println(getId()+"turn on");
     }
 
     @Override
     public void turnOff() {
-
+        System.out.println(getId()+"turn off");
     }
 }

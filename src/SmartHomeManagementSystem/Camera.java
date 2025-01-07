@@ -7,14 +7,18 @@ public class Camera extends Device {
 
     @Override
     public void turnOn() {
-
+        System.out.println(getId() + " turned on");
     }
 
     @Override
     public void turnOff() {
-
+        System.out.println(getId()+ " turned off");
     }
-    public void startRecording() {}
-    public void stopRecording() {}
+    public void startRecording() {
+        System.out.println(" starting recording");
+    }
+    public void stopRecording() {
+        System.out.println(" stopping recording");
+    }
 
 }
